@@ -10,14 +10,12 @@ class Heroe{
   
   String nombre;
   String poder;
-  
-  Heroe({String nombre = 'Sin nombre',String poder}){
-    this.nombre = nombre;
-    this.poder = poder;
-  }
+//  Heroe({String nombre = 'Sin nombre',String poder}){
+//    this.nombre = nombre;
+//    this.poder = poder;
+//  }
+  Heroe({this.nombre,this.poder});
   //Sobreescribir el metodo de impresion
-  String toString(){
-    return 'nombre: ${this.nombre} - poder: ${this.poder}';
-  }
+  String toString() => 'nombre: $nombre - poder: $poder';
   
 }
